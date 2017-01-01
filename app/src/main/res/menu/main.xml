@@ -6,7 +6,6 @@
         android:orderInCategory="100"
         android:icon="@drawable/marker"
         android:showAsAction="always"
-        android:title="@string/action_settings"/>
-
+        android:title="Location"/>
 
 </menu>

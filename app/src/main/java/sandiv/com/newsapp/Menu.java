@@ -1,12 +1,14 @@
 package sandiv.com.newsapp;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -124,6 +126,8 @@ public class Menu extends ActionBarActivity {
 		// Handle action bar actions click
 		switch (item.getItemId()) {
 		case R.id.location:
+			Intent intent_maps=new Intent(this,MapsActivity.class);
+			startActivity(intent_maps);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
@@ -134,8 +138,8 @@ public class Menu extends ActionBarActivity {
 	@Override
 	public boolean onPrepareOptionsMenu(android.view.Menu menu) {
 		// if nav drawer is opened, hide the action items
-		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-		menu.findItem(R.id.location).setVisible(!drawerOpen);
+	//	boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+	//	menu.findItem(R.id.location).setVisible(!drawerOpen);
 		return super.onPrepareOptionsMenu(menu);
 	}
 
@@ -147,10 +151,12 @@ public class Menu extends ActionBarActivity {
 		switch (position) {
 		case 0:
 			getSupportActionBar().setIcon(R.drawable.skip);
-            fragment = new DashboardFragment();
+			fragment = new DashboardFragment();
+
 			break;
 		case 1:getSupportActionBar().setIcon(R.drawable.skip);
-            fragment = new DashboardFragment();
+			Intent intent = new Intent(this, MapsActivity.class);
+			startActivity(intent);
 			break;
 		case 2:
 			getSupportActionBar().setIcon(R.drawable.skip);
