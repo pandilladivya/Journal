@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "494209612013",
+    "firebase_url": "https://journal-a33e0.firebaseio.com",
+    "project_id": "journal-a33e0",
+    "storage_bucket": "journal-a33e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494209612013:android:4ab4b16dae0cb825",
+        "android_client_info": {
+          "package_name": "sandiv.com.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494209612013-6hmakibtgdgou651s19eb1o66m9cbrub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sandiv.com.newsapp",
+            "certificate_hash": "E4C22D61A2D602ACB10BAD0F8EA513DB19A79361"
+          }
+        },
+        {
+          "client_id": "494209612013-u8mr0nq8s913tu3g28ectolkea6bu6gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqN8gobIR4BorUxkulcAfaK9VWcgkuqOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494209612013-u8mr0nq8s913tu3g28ectolkea6bu6gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
