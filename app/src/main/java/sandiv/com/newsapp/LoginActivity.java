@@ -133,9 +133,7 @@ public class LoginActivity extends AppCompatActivity {
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
 
-                // TODO: Implement successful signup logic here
-                // By default we just finish the Activity and log them in automatically
-                this.finish();
+                // TODO: Implement successful AFTER signup logic here
             }
         }
     }
