@@ -17,6 +17,9 @@
 
     </string-array>
 
+    <string name="next">NEXT</string>
+    <string name="start">GOT IT</string>
+    <string name="skip">SKIP</string>
     <string name="Editorials">Editorials</string>
     <string name="Sports">Sports</string>
     <string name="Job">Job Notifications</string>
