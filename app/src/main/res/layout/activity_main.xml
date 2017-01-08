@@ -15,4 +15,63 @@
         android:layout_alignParentBottom="true"
         android:minHeight="?attr/actionBarSize" />
 
+    <RelativeLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_above="@+id/relative_layout_right">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="This is a multi text view with some sample text"
+            android:paddingTop="10dp"
+            android:id="@+id/input_data"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/input_data_submit"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_data_submit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="191dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginTop="195dp"
+        android:layout_above="@+id/toolbar_bottom">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="195dp"
+        android:layout_marginStart="195dp"
+        android:layout_alignTop="@+id/relative_layout_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/toolbar_bottom">
+    </RelativeLayout>
+
 </RelativeLayout>

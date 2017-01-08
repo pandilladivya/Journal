@@ -53,6 +53,7 @@ public class Menu extends ActionBarActivity {
 		navMenuIcons = getResources()
 				.obtainTypedArray(R.array.nav_drawer_icons);
 
+        //TODO: Set the back arrow as menu icon and overflow icon as maps icon
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
@@ -148,6 +149,7 @@ public class Menu extends ActionBarActivity {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
 		//ContactFragment frag=null;
+		//TODO: Add proper icons for each and every fragment
 		switch (position) {
 		case 0:
 			getSupportActionBar().setIcon(R.drawable.skip);
@@ -182,15 +184,9 @@ public class Menu extends ActionBarActivity {
 				getSupportActionBar().setIcon(R.drawable.skip);
 				fragment = new DashboardFragment();
 				break;
-
-
-
 		default:
 			break;
 		}
-
-
-
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
@@ -213,14 +209,12 @@ public class Menu extends ActionBarActivity {
 		getSupportActionBar().setTitle(mTitle);
 	}
 
-
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		// Sync the toggle state after onRestoreInstanceState has occurred.
 		mDrawerToggle.syncState();
 	}
-
 
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);
