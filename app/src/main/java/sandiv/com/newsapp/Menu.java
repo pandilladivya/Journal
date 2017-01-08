@@ -53,7 +53,7 @@ public class Menu extends ActionBarActivity {
 		navMenuIcons = getResources()
 				.obtainTypedArray(R.array.nav_drawer_icons);
 
-        //TODO: Set the back arrow as menu and 3 dots icon as maps icon
+        //TODO: Set the back arrow as menu icon and overflow icon as maps icon
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
