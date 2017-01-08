@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
+            android:hint="This is a multi text view with some sample text"
             android:paddingTop="10dp"
             android:id="@+id/input_data"
             android:layout_centerHorizontal="true"
